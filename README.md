@@ -9,7 +9,6 @@
 ### Project installation:
 
 - Enter to project directory and run following command 'npm i'
-- Enter to client directory which is in the root and run following command 'bower i'
 - Enter to server directory which is in the root and run following command 'npm i'
 - Return to root folder and run 'gulp server'
 - Open new tab of terminal ( cmd for Windows ), go to the root and run 'gulp client'
