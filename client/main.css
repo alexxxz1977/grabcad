@@ -1,0 +1,23 @@
+.true-button {
+     background-color: #00993f !important;
+ }
+
+.true-button:hover {
+    background-color: #00a844 !important;
+}
+
+.true-button span {
+    color: white;
+}
+
+.false-button {
+    background-color: #992705 !important;
+}
+
+.false-button:hover {
+    background-color: #b92c05 !important;
+}
+
+.false-button span {
+    color: white;
+}

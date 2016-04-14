@@ -1,0 +1,14 @@
+{
+  "name": "test_2603",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^3.2.1",
+    "gulp-nodemon": "^2.0.6"
+  },
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
+}

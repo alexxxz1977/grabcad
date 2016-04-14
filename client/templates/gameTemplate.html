@@ -1,0 +1,40 @@
+<div id="demo">
+    <h1>The game</h1>
+    <h2 ng-show="full">The game is full. Please try later.</h2>
+       <div ng-hide="full">
+        <h2>
+            Your score is <span ng-bind="userScores"></span>.
+            There <span ng-bind="usersCount"></span> users currently online.
+        </h2>
+
+        <h2 ng-hide="timeToNextContest == null">The round is over. Next round will start in
+            <span ng-bind="timeToNextContest"></span> seconds</h2>
+
+        <div class="table-responsive-vertical shadow-z-1">
+            <table id="table" class="table table-hover table-mc-light-blue">
+                <thead>
+                <tr>
+                    <th>Round</th>
+                    <th>Expression</th>
+                    <th>Your answer</th>
+                    <th>Result</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="contest in contests">
+                    <td data-title="Round" ng-bind="contest.round"></td>
+                    <td data-title="Expression" ng-bind="contest.expression"></td>
+                    <td data-title="Your answer">
+                        <span ng-show="contest.answer != null" ng-bind="contest.answer"></span>
+                        <span ng-hide="contest.answer != null">
+                            <md-button ng-click="sendAnswer(true)" class="md-raised true-button">Yes</md-button>
+                            <md-button ng-click="sendAnswer(false)" class="md-raised false-button">No</md-button>
+                        </span>
+                    </td>
+                    <td data-title="Result" ng-bind="contest.result"></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
